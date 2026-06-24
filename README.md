@@ -2,19 +2,39 @@
 
 ![Lumina Banner](https://picsum.photos/id/1015/1200/400)
 
-A modern, beautiful and fully responsive **Fashion E-commerce Website** built with HTML, CSS, and Vanilla JavaScript.
+<div align="center">
+  
+  <strong>A modern, elegant and fully responsive fashion e-commerce website built with HTML, Tailwind CSS, and JavaScript.</strong>
+
+  ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white)
+  ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
+</div>
 
 ---
 
-## ✨ Features
+### ✨ Live Demo
+> (এখানে পরে তোমার GitHub Pages / Netlify লিংক দিবে)
 
-- Fully Responsive Design (Mobile + Desktop)
-- Dark Mode Toggle
-- Product Filtering by Category (Men, Women, Sneakers, Hoodies, etc.)
-- Add to Cart with smooth animation
-- Live Cart Sidebar with real-time total calculation
-- Hover effects and modern UI/UX
-- Clean and minimal design
+---
+
+### 📸 Preview
+
+![Lumina Fashion Preview](https://picsum.photos/id/1015/1000/550)
+
+*(Replace this image with your actual project screenshot later for better impression)*
+
+---
+
+## ✨ Key Features
+
+- ✅ Fully Responsive Design (Mobile, Tablet & Desktop)
+- ✅ Dark / Light Mode Toggle
+- ✅ Product Filtering by Categories
+- ✅ Add to Cart with Smooth Animation
+- ✅ Real-time Cart Sidebar with Total Calculation
+- ✅ Modern Hover Effects & Clean UI/UX
+- ✅ Beautiful Product Cards with High-quality Images
 
 ---
 
@@ -27,16 +47,8 @@ A modern, beautiful and fully responsive **Fashion E-commerce Website** built wi
 
 ---
 
-## 📸 Preview
+## 🚀 How to Run Locally
 
-![Lumina Fashion Preview](https://picsum.photos/id/1015/800/500)
-
-*(আপনি চাইলে পরে আপনার প্রজেক্টের স্ক্রিনশট দিয়ে এই জায়গাটা আপডেট করতে পারবেন)*
-
----
-
-## 🚀 How to Run
-
-1. এই রিপোজিটরিটি ডাউনলোড বা ক্লোন করুন:
+1. Clone the repository:
    ```bash
    git clone https://github.com/YOUR-USERNAME/lumina-fashion.git

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LUMINA - Fashion Store</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="bg-gray-50 dark:bg-gray-950 text-gray-900 dark:text-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-white dark:bg-gray-900 shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1
+                class="text-4xl font-bold tracking-tighter bg-gradient-to-r from-pink-600 to-violet-600 bg-clip-text text-transparent">
+                LUMINA</h1>
+
+            <div class="hidden md:flex gap-8 text-lg">
+                <a href="#" class="hover:text-pink-600 transition">Shop</a>
+                <a href="#" class="hover:text-pink-600 transition">Men</a>
+                <a href="#" class="hover:text-pink-600 transition">Women</a>
+                <a href="#" class="hover:text-pink-600 transition">Sale</a>
+            </div>
+
+            <div class="flex items-center gap-6">
+                <button id="searchBtn" class="text-2xl hover:text-pink-600"><i class="fas fa-search"></i></button>
+                <button id="themeToggle" class="text-2xl hover:text-pink-600"><i class="fas fa-moon"></i></button>
+                <button id="cartBtn" class="relative text-2xl hover:text-pink-600">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span id="cartCount"
+                        class="absolute -top-1 -right-1 bg-pink-600 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center">0</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero-bg h-screen flex items-center relative">
+        <div class="max-w-7xl mx-auto px-6 text-center text-white">
+            <h2 class="text-6xl md:text-7xl font-bold mb-6">Spring Collection 2025</h2>
+            <p class="text-2xl mb-8">Discover the latest trends in fashion</p>
+            <button
+                class="bg-white text-black px-10 py-4 rounded-full text-lg font-semibold hover:scale-105 transition">
+                Shop Now
+            </button>
+        </div>
+    </section>
+
+    <!-- Filters -->
+    <div class="max-w-7xl mx-auto px-6 py-8">
+        <div class="flex flex-wrap gap-3" id="filters">
+            <button data-filter="all" class="filter-btn active">All</button>
+            <button data-filter="men" class="filter-btn">Men</button>
+            <button data-filter="women" class="filter-btn">Women</button>
+            <button data-filter="sneakers" class="filter-btn">Sneakers</button>
+            <button data-filter="hoodie" class="filter-btn">Hoodies</button>
+        </div>
+    </div>
+
+    <!-- Products Grid -->
+    <div class="max-w-7xl mx-auto px-6 pb-20">
+        <div id="productGrid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"></div>
+    </div>
+
+    <!-- Cart Sidebar -->
+    <div id="cartSidebar"
+        class="fixed top-0 right-0 h-full w-96 bg-white dark:bg-gray-900 shadow-2xl transform translate-x-full transition-transform duration-300 z-50">
+        <div class="p-6">
+            <div class="flex justify-between items-center mb-6">
+                <h3 class="text-2xl font-bold">Your Cart</h3>
+                <button id="closeCart" class="text-3xl">&times;</button>
+            </div>
+            <div id="cartItems" class="space-y-6"></div>
+            <div class="mt-8 border-t pt-6">
+                <div class="flex justify-between text-xl font-semibold">
+                    <span>Total</span>
+                    <span id="cartTotal">৳0</span>
+                </div>
+                <button
+                    class="w-full bg-gradient-to-r from-pink-600 to-violet-600 text-white py-4 rounded-2xl mt-6 font-semibold text-lg">
+                    Proceed to Checkout
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
